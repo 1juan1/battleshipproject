@@ -61,6 +61,10 @@ var gameBoard = [
 
 function fireTorpedo() {
 
+	function fireTorpedoe() {
+	  $("#fireTorpedoe").text($("#fireTorpedoe").val());
+	}
+
 	// Your game logic will go here!
 
 }
