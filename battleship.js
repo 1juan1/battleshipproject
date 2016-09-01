@@ -63,10 +63,13 @@ var gameBoard = [
 
 function fireTorpedo() {
 
-	function fireTorpedoe() {
-	  $("#fireTorpedoe").text($("#fireTorpedoe").val());
-	}
+
+	   var userInput = $("#inputBox").val();
+
 
 	// Your game logic will go here!
+}
+
+function coordinateInput() {
 
 }
