@@ -2,18 +2,27 @@ body {
     margin: 60px auto;
     width: 70%;
     max-width: 950px;
+    background-image: url(http://wallpapercave.com/wp/OzpiTdT.jpg);
+    text-align:center;
+}
+
+header {
+  background-color: white;
 }
 
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 p, button, input {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: white;
 	margin-bottom:1em;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 #gameboard {
@@ -38,10 +47,19 @@ p, button, input {
   text-align: center;
   font-family: sans-serif;
   line-height: 50px;
+
+  padding: 5px;
 }
 
 #instructionsArea {
   position:relative;
   margin:0 auto 2em auto;
   width:500px;
+}
+
+button{
+  border-radius: 20px;
+  color: blue;
+
+
 }

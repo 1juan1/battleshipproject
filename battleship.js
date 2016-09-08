@@ -1,4 +1,5 @@
 // sets grid rows and columns and the size of each square
+var hitCount = 0;
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
@@ -63,13 +64,31 @@ var gameBoard = [
 
 function fireTorpedo() {
 
-
 	   var userInput = $("#inputBox").val();
+    var rowletter = userInput.substring(0,1);
+		var column = userInput.substring(1,3);
+		var columnConversion = column - 1;
 
 
-	// Your game logic will go here!
+		var row = letterConversion[rowletter];
+		var potato = 's' + row + columnConversion;
+		if (gameBoard[row][columnConversion] == 1)
+		 {
+			$("#" + potato).css("background-color", "red");
+			hitCount += 1;
+		}
+		 else {
+				$("#" + potato).css("background-color", "blue");
+		}
+if (hitCount == 17)
+{
+	$("#instructions").text("YOU SUNK ALL MY Grades");
 }
 
-function coordinateInput() {
 
+
+
+
+
+		console.log(hitCount);
 }
