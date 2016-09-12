@@ -2,8 +2,9 @@ body {
     margin: 60px auto;
     width: 70%;
     max-width: 950px;
-    background-image: url(http://wallpapercave.com/wp/OzpiTdT.jpg);
+    background-image: url("http://www.fg-a.com/wallpapers/geo-shapes-black-1280.jpg");
     text-align:center;
+
 }
 
 header {
@@ -20,7 +21,7 @@ h1 {
 p, button, input {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: white;
+    color: black;
 	margin-bottom:1em;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -39,8 +40,8 @@ p, button, input {
 	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
 	background: #f6f8f9; /* Old browsers */
 	border: 1px solid #ddd;
-	width:50px;
-	height:50px;
+	width:45px;
+	height:45px;
 }
 
 .boardSquare {

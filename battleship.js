@@ -19,7 +19,18 @@ var letterConversion = {
 	"G": 6,
 	"H": 7,
 	"I": 8,
-	"J": 9
+	"J": 9,
+
+	"a": 0,
+	"b": 1,
+	"c": 2,
+	"d": 3,
+	"e": 4,
+	"f": 5,
+	"g": 6,
+	"h": 7,
+	"i": 8,
+	"j": 9
 }
 
 var letterArray = ["A","B","C","D","E","F","G","H","I","J"]
@@ -62,6 +73,9 @@ var gameBoard = [
 				[1,0,0,0,0,0,0,0,0,0]
 				]
 
+				var numberhit = 17;
+				$("#numberhit").text(numberhit + " ships you have not hit");
+
 function fireTorpedo() {
 
 	   var userInput = $("#inputBox").val();
@@ -76,13 +90,16 @@ function fireTorpedo() {
 		 {
 			$("#" + potato).css("background-color", "red");
 			hitCount += 1;
+			numberhit -= 1;
+			$("#numberhit").text(numberhit + " ships you have not hit");
+console.log(numberhit);
 		}
 		 else {
-				$("#" + potato).css("background-color", "blue");
+				$("#" + potato).css("background-color", "grey");
 		}
 if (hitCount == 17)
 {
-	$("#instructions").text("YOU SUNK ALL MY Grades");
+	$("body").text("YOU SUNK ALL MY ships");
 }
 
 
